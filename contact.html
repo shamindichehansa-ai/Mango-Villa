@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mango Villa</title>
+    <style>
+        /* ඔබේ පවතින Design එකට ගැලපෙන සරල CSS */
+        body { font-family: 'Poppins', sans-serif; background-color: #0b1c3f; margin: 0; padding: 20px; color: white; }
+        .container { display: flex; max-width: 1000px; margin: 50px auto; background: white; border-radius: 15px; overflow: hidden; color: #333; }
+        .info-side { flex: 1; background-color: #f8f9fa; padding: 40px; }
+        .form-side { flex: 1.5; padding: 40px; }
+        h2 { color: #0b1c3f; margin-bottom: 20px; }
+        .input-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; color: #555; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; background: #fdfdfd; }
+        button { background-color: #0b1c3f; color: white; padding: 15px 30px; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; }
+        button:hover { background-color: #162a5a; }
+        .contact-info p { margin: 5px 0; color: #666; }
+        .contact-info strong { color: #0b1c3f; display: block; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <div style="text-align: center;">
+        <h1 style="color: white;">Contact Us</h1>
+        <p style="color: #cbd5e0;">Send us your inquiries anytime.</p>
+    </div>
+
+    <div class="container">
+        <!-- වම් පැත්ත: විස්තර -->
+        <div class="info-side">
+            <h2>Coordination details</h2>
+            <div class="contact-info">
+                <strong>OUR ADDRESS</strong>
+                <p>Thamarindu, Dodampahala, Dickwella</p>
+
+                <strong>WHATSAPP/PHONE</strong>
+                <p>+94 715821767</p>
+
+                <strong>EMAIL</strong>
+                <p>mangovillahiriketiya@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- දකුණු පැත්ත: Form එක -->
+        <div class="form-side">
+            <!-- Netlify Form එක මෙතැනින් ආරම්භ වේ -->
+            <form name="contact-form" method="POST" data-netlify="true" action="/thanks.html">
+                
+                <div class="input-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" name="subject" placeholder="Matter of inquiry" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea name="message" rows="5" placeholder="Write here what you want to know" required></textarea>
+                </div>
+
+                <!-- Netlify Bot හඳුනා ගැනීමට (Spam වැළැක්වීමට) -->
+                <div style="display:none"><label><input name="bot-field"></label></div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

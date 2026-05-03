@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location | Mango Villa</title>
+    <meta name="description" content="Find the exact location of Mango Villa. Conveniently located near the beach and main attractions for easy access.">
+    <!-- Google Fonts එක් කර ගැනීම -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header කොටස */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* ප්‍රධාන කන්ටේනරය */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        /* විස්තර ඇතුළත් කාඩ්පත */
+        .info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-left: 5px solid #ff6b6b;
+        }
+
+        .info-card h2 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* සිතියම (Map) ඇති කොටස */
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            height: 400px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Home Page එකට යන බොත්තම */
+        .btn-home {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .btn-home:hover {
+            background-color: #ee5253;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Mobile Phone සඳහා වෙනස් කිරීම් */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="header">
+        <h1>Come & find us</h1>
+        <p>Come to our hotel to enjoy the beauty of nature.</p>
+    </section>
+
+    <div class="container">
+        <!-- විස්තර කොටස -->
+        <div class="info-card">
+            <h2>To contact</h2>
+            <div class="contact-item">
+                <strong>Address:</strong> &nbsp; Thamarindu,Dodampahala,Dickwella
+            </div>
+            <div class="contact-item">
+                <strong>Whatsapp:</strong> &nbsp; +94715821767
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong> &nbsp; mangovillahiriketiya@gmail.com
+            </div>
+            
+            <p style="margin-top: 20px;">Our hotel is a five-minute walk from Hiriketiya Beach.</p>
+
+            <!-- Home Page එකට යන Link එක -->
+            <a href="index.html" class="btn-home">Home page</a>
+        </div>
+
+        <!-- සිතියම කොටස -->
+        <div class="map-container">
+            <!-- මෙහි Google Maps Embed Code එක ඇතුළත් කළ හැක -->
+            
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.184090038396!2d80.70367211087722!3d5.96936632932908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1370069f20509%3A0xc62b000a06057dd3!2sMango%20Villa%20Hiriketiya!5e0!3m2!1sen!2slk!4v1777621706390!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
