@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You | Mango Villa</title>
-    <!-- Google Fonts එක් කර ගැනීම -->
-    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <!-- Google Fonts නිවැරදි link එක (Poppins font එක සඳහා) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
+            /* මෙතන font-family එක Google Font එකට ගැලපෙන ලෙස නිවැරදි කර ඇත */
             font-family: 'Poppins', sans-serif;
-            background-color: #0b1c3f; /* ඔබේ ප්‍රධාන තේමා වර්ණය */
+            background-color: #0b1c3f; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,7 +46,7 @@
         }
         h1 {
             color: #0b1c3f;
-            margin-bottom: 10px;
+            margin: 0 0 10px 0; /* Margin එක පැහැදිලිව සකස් කිරීම */
             font-weight: 600;
         }
         p {
@@ -59,6 +64,7 @@
             border-radius: 50px;
             font-weight: 600;
             transition: 0.3s;
+            border: none;
         }
         .btn-home:hover {
             background-color: #1a3a7a;
